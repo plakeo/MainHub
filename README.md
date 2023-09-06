@@ -4,4 +4,4 @@ Meu hub principal, mostrando outros repositórios e informações sobre os mesmo
 Repositórios inclusos:
 
 > - Buracos Negros
-> - Projeto Integrador (PlayPotion
+> - Projeto Integrador (PlayPotion)
