@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <title>MainHub</title>
 </head>
 
-<span>plakeogod@gmail.com</span>
+<p id="texto-copiar" onclick="copiarTexto()">plakeogod@gmail.com</p>
+<div id="aviso" style="display: none;"></div>
 
 <body>
-    <div>
-        <a href="https://plakeo.github.io/ProjetoIntegrador/">Projeto Integrador</a>
-        <a href="https://plakeo.github.io/BuracosNegros/">Buracos Negros</a>
+    <div class="items">
+        <a href="https://plakeo.github.io/ProjetoIntegrador/"><div class="item"><span>PlayPotion</span></div></a>
+        <a href="https://plakeo.github.io/BuracosNegros/"><div class="item"><span>Buracos Negros</span></div></a>
     </div>
 </body>
+
+<script>
+    function copiarTexto() {
+        // Seleciona o texto do elemento <p>
+        var texto = document.getElementById("texto-copiar").textContent;
+        
+        // Copia o texto para a área de transferência
+        navigator.clipboard.writeText(texto)
+            .then(function() {
+            })
+            .catch(function(error) {
+                console.error("Erro ao copiar o texto");
+            });
+    }
+</script>
+
 </html>
