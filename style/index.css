@@ -28,7 +28,7 @@ body .items{
 }
 
 body .item{
-    background-image: url(../img/login.jpg);
+    background-image: url(../img/box.jpg);
     background-size: cover;
     width: 15vw;
     height: 15vh;
